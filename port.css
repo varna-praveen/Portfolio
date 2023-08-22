@@ -1,0 +1,140 @@
+:root {
+  --white-color: #fff;
+  --bg-color: #fff;
+  --gray-color: #ccc;
+}
+body {
+  background: var(--bg-color) !important;
+}
+.header {
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; 
+}
+.profile-pic {
+  width: 50px;
+  height: 50px; 
+}
+.navbar-brand{
+  margin-left: 10px;
+}
+.navbar-nav{
+  position: fixed;
+}
+
+.nav-link {
+  color: #fff;
+} 
+.navbar-nav .nav-link:hover{
+  color: #e0e0e0;
+}
+.container-xxl{
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.75rem;
+}
+
+.fs-3 {
+  font-size: 1.75rem;
+}
+.navbar-nav.ms-auto.mb-2.mb-lg-0 {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 0;
+}
+
+.hero {
+  height: 100vh;
+  background-image: url("desktop-wallpaper.jpg");
+  background-repeat: no-repeat;
+  background-position: 60% 0%;
+  background-size: cover;
+  background-attachment: fixed;
+} 
+.hero.d-flex.flex-column.align-items-center.justify-content-center {
+  background-color: #f2f2f2;
+  padding: 50px;
+}
+.rounded {
+  border-radius: 10px; 
+}
+
+  .skills {
+  text-align: right; 
+  padding-top: 10px; 
+  padding-bottom: 10px; 
+  color: white; 
+}  
+  
+.html {width: 90%; background-color: rgb(41, 3, 3);} 
+.css {width: 80%; background-color: rgb(56, 8, 8);} 
+.js {width: 65%; background-color: rgb(46, 2, 2);} 
+.python {width: 60%; background-color: rgb(26, 4, 4);} 
+
+#portfolio img {
+  height: 300px;
+  object-fit: cover;
+}
+  
+#about .img,
+#about img,
+.hire-text h2 {
+  position: relative;
+}
+
+  #about .img::before {
+    content: "";
+    left: 50%;
+    width: 4px;
+    position: absolute;
+    height: calc(100% + 140px);
+    background: var(--gray-color);
+  }
+  
+  #about img,
+  #about .hire-text h2 {
+    width: 140px;
+  }
+  
+  #about .hire-text h2 {
+    height: 140px;
+  }
+  
+  .social-icons a {
+    width: 40px;
+    height: 40px;
+  }
+  
+  #about img {
+    width: 230px;
+  }
+  
+  #contact {
+    height: 110vh;
+    background-image: url("desktop-wallpaper.jpg");
+  } 
+  
+  @media screen and (max-width: 990px) {
+    #skills .card {
+      width: calc(100% / 2 - 10px) !important;
+    }
+  }
+  
+  @media screen and (max-width: 668px) {
+    #skills .card{
+      width: 100% !important;
+    }
+   #about .hire-text h2 {
+     height: 70px;
+     width: 70px;
+   }
+  }
